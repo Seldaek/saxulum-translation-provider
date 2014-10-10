@@ -38,10 +38,17 @@ $container['debug'] = true; // or false
 ##### Define translator service
 
 ```{.php}
+use Symfony\Component\Translation\Translator;
+
 $container['translator'] = function () {
     return new Translator('en');
 };
 ```
+
+Or if you load silex/silex as a dependency you can also use the TranslationServiceProvider.
+
+```
+
 
 #### For all users
 
